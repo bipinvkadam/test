@@ -11,3 +11,5 @@ export ftp_proxy=http://inban1b-proxy.apac.nsn-net.net:8080
 export https_proxy=http://inban1b-proxy.apac.nsn-net.net:8080
 export no_proxy=127.0.0.1,localhost,10.142.201.128,.alcatel-lucent.com
 
+For gui 
+https://desktop.github.com/
