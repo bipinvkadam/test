@@ -1,0 +1,19 @@
+#PCAP
+  https://danielmiessler.com/study/tcpdump/
+  tcpdump -i any -w test.pcap
+
+  -t : Give human-readable timestamp output
+
+   sudo tcpdump -U -nnvvXSs 0 -i any \(host IP1 or IP2 or host IP3 or host IP4\) and \(port Num1 or port Num2 or port Num3 or port Num4 or port Num5 or port Num6\) -W 1 -w 07272014_diameter.pcap
+
+     where IP1, IP2, IP3, IP4 are the IP address for which you want to capture the traffic.
+     Num1, Num2…Num5 are port numbers.
+
+#To change the protocol associated with a port:
+  Edit -> Preferences -> Protocols.
+
+#Filter:
+  ((tcp.srcport == 6000)|| (tcp.dstport == 6000) &&diameter) && !(diameter.cmd.code == 280)
+
+#wireshark
+  https://badfi.com/blog/2017/5/16/sharktip-1
